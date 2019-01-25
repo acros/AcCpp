@@ -16,6 +16,12 @@
     <Filter Include="源文件\tricks">
       <UniqueIdentifier>{b89fb5fa-2e3a-4f11-a1cb-6c157eb8735a}</UniqueIdentifier>
     </Filter>
+    <Filter Include="源文件\tutorial">
+      <UniqueIdentifier>{8f3e7fd1-38f9-4a9e-a634-2b93a12ec2e5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\tutorial\json_parser">
+      <UniqueIdentifier>{87db9318-c4ff-4abb-9aee-323cb79733a5}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="pch.h">
@@ -26,6 +32,9 @@
     </ClInclude>
     <ClInclude Include="tricks\sfinae.h">
       <Filter>源文件\tricks</Filter>
+    </ClInclude>
+    <ClInclude Include="tutorial\leptjson\leptjson.h">
+      <Filter>源文件\tutorial\json_parser</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
@@ -40,6 +49,12 @@
     </ClCompile>
     <ClCompile Include="main.cpp">
       <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="tutorial\leptjson\test.c">
+      <Filter>源文件\tutorial\json_parser</Filter>
+    </ClCompile>
+    <ClCompile Include="tutorial\leptjson\leptjson.cpp">
+      <Filter>源文件\tutorial\json_parser</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>
