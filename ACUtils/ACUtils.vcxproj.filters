@@ -50,10 +50,10 @@
     <ClCompile Include="main.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="tutorial\leptjson\test.c">
+    <ClCompile Include="tutorial\leptjson\leptjson.cpp">
       <Filter>源文件\tutorial\json_parser</Filter>
     </ClCompile>
-    <ClCompile Include="tutorial\leptjson\leptjson.cpp">
+    <ClCompile Include="tutorial\leptjson\test.cpp">
       <Filter>源文件\tutorial\json_parser</Filter>
     </ClCompile>
   </ItemGroup>

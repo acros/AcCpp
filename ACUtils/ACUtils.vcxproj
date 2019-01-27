@@ -84,7 +84,7 @@
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
-      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
       <WarningLevel>Level3</WarningLevel>
       <Optimization>Disabled</Optimization>
       <SDLCheck>true</SDLCheck>
@@ -168,7 +168,7 @@
     <ClCompile Include="tricks\convar_and_contravar.cpp" />
     <ClCompile Include="tricks\sfinae.cpp" />
     <ClCompile Include="tutorial\leptjson\leptjson.cpp" />
-    <ClCompile Include="tutorial\leptjson\test.c" />
+    <ClCompile Include="tutorial\leptjson\test.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
