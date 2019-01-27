@@ -156,6 +156,7 @@
     <ClInclude Include="tricks\convar_and_contravar.h" />
     <ClInclude Include="tricks\sfinae.h" />
     <ClInclude Include="tutorial\leptjson\leptjson.h" />
+    <ClInclude Include="utils\MixStack.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp" />
@@ -169,6 +170,7 @@
     <ClCompile Include="tricks\sfinae.cpp" />
     <ClCompile Include="tutorial\leptjson\leptjson.cpp" />
     <ClCompile Include="tutorial\leptjson\test.cpp" />
+    <ClCompile Include="utils\MixStack.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

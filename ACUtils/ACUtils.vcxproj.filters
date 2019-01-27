@@ -22,6 +22,9 @@
     <Filter Include="源文件\tutorial\json_parser">
       <UniqueIdentifier>{87db9318-c4ff-4abb-9aee-323cb79733a5}</UniqueIdentifier>
     </Filter>
+    <Filter Include="源文件\utils">
+      <UniqueIdentifier>{3a01180f-22a7-4462-a371-b7e9509b73c3}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="pch.h">
@@ -35,6 +38,9 @@
     </ClInclude>
     <ClInclude Include="tutorial\leptjson\leptjson.h">
       <Filter>源文件\tutorial\json_parser</Filter>
+    </ClInclude>
+    <ClInclude Include="utils\MixStack.h">
+      <Filter>源文件\utils</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
@@ -55,6 +61,9 @@
     </ClCompile>
     <ClCompile Include="tutorial\leptjson\test.cpp">
       <Filter>源文件\tutorial\json_parser</Filter>
+    </ClCompile>
+    <ClCompile Include="utils\MixStack.cpp">
+      <Filter>源文件\utils</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>
