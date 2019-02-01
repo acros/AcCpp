@@ -154,6 +154,8 @@
   <ItemGroup>
     <ClInclude Include="pch.h" />
     <ClInclude Include="tricks\convar_and_contravar.h" />
+    <ClInclude Include="tricks\CppStandard11.h" />
+    <ClInclude Include="tricks\evil_trick.h" />
     <ClInclude Include="tricks\sfinae.h" />
     <ClInclude Include="tutorial\leptjson\leptjson.h" />
     <ClInclude Include="utils\MixStack.h" />
@@ -167,6 +169,7 @@
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
     </ClCompile>
     <ClCompile Include="tricks\convar_and_contravar.cpp" />
+    <ClCompile Include="tricks\CppStandard11.cpp" />
     <ClCompile Include="tricks\sfinae.cpp" />
     <ClCompile Include="tutorial\leptjson\leptjson.cpp" />
     <ClCompile Include="tutorial\leptjson\test.cpp" />

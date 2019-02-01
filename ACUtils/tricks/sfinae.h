@@ -1,6 +1,7 @@
 #pragma once
 
 
+
 class SFINAE_Checker
 {
 public:

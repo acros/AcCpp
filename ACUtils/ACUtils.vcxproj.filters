@@ -42,6 +42,12 @@
     <ClInclude Include="utils\MixStack.h">
       <Filter>源文件\utils</Filter>
     </ClInclude>
+    <ClInclude Include="tricks\evil_trick.h">
+      <Filter>源文件\tricks</Filter>
+    </ClInclude>
+    <ClInclude Include="tricks\CppStandard11.h">
+      <Filter>源文件\tricks</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="pch.cpp">
@@ -64,6 +70,9 @@
     </ClCompile>
     <ClCompile Include="utils\MixStack.cpp">
       <Filter>源文件\utils</Filter>
+    </ClCompile>
+    <ClCompile Include="tricks\CppStandard11.cpp">
+      <Filter>源文件\tricks</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>
