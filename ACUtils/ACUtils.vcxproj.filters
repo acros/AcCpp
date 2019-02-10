@@ -48,6 +48,9 @@
     <ClInclude Include="tricks\CppStandard11.h">
       <Filter>源文件\tricks</Filter>
     </ClInclude>
+    <ClInclude Include="tutorial\ClassLayoutCheck.h">
+      <Filter>源文件\tutorial</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="pch.cpp">
@@ -73,6 +76,9 @@
     </ClCompile>
     <ClCompile Include="tricks\CppStandard11.cpp">
       <Filter>源文件\tricks</Filter>
+    </ClCompile>
+    <ClCompile Include="tutorial\ClassLayoutCheck.cpp">
+      <Filter>源文件\tutorial</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

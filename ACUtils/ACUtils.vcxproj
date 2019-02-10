@@ -91,6 +91,7 @@
       <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
       <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+      <AdditionalOptions>	 %(AdditionalOptions)</AdditionalOptions>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -157,6 +158,7 @@
     <ClInclude Include="tricks\CppStandard11.h" />
     <ClInclude Include="tricks\evil_trick.h" />
     <ClInclude Include="tricks\sfinae.h" />
+    <ClInclude Include="tutorial\ClassLayoutCheck.h" />
     <ClInclude Include="tutorial\leptjson\leptjson.h" />
     <ClInclude Include="utils\MixStack.h" />
   </ItemGroup>
@@ -171,6 +173,7 @@
     <ClCompile Include="tricks\convar_and_contravar.cpp" />
     <ClCompile Include="tricks\CppStandard11.cpp" />
     <ClCompile Include="tricks\sfinae.cpp" />
+    <ClCompile Include="tutorial\ClassLayoutCheck.cpp" />
     <ClCompile Include="tutorial\leptjson\leptjson.cpp" />
     <ClCompile Include="tutorial\leptjson\test.cpp" />
     <ClCompile Include="utils\MixStack.cpp" />
