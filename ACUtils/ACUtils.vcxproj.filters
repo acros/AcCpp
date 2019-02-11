@@ -51,6 +51,12 @@
     <ClInclude Include="tutorial\ClassLayoutCheck.h">
       <Filter>源文件\tutorial</Filter>
     </ClInclude>
+    <ClInclude Include="utils\Allocator.h">
+      <Filter>源文件\utils</Filter>
+    </ClInclude>
+    <ClInclude Include="utils\GenericMemoryBuffer.h">
+      <Filter>源文件\utils</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="pch.cpp">

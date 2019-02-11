@@ -285,8 +285,8 @@ protected:
 
 void ClassLayoutCheck::printClassLayout()
 {
-	intptr_t BaseClass::* p1 = nullptr;
-	intptr_t BaseClass::* p2 = &BaseClass::baseVal;
+	int BaseClass::* p1 = nullptr;
+	int BaseClass::* p2 = &BaseClass::baseVal;
 
 	//	typedef void (*FuncPtr)();
 	typedef void (BaseClass::*BaseClassFunPtr)();

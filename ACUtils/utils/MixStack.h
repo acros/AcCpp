@@ -62,14 +62,14 @@ namespace Acros
 		//混合类型栈本身不记录类型信息，需要制定弹出类型
 		template<typename T> T* Pop(size_t count)
 		{
-			assert(GetSize() > count * sizeof(T));
+			assert(GetSize() >= count * sizeof(T));
 			stackTop_ -= count * sizeof(T);
 			return reinterpret_cast<T*>(stackTop_);
 		}
 
 		template<typename T> T* Top()
 		{
-			assert(GetSize() > sizeof(T));
+			assert(GetSize() >= sizeof(T));
 			return reinterpret_cast<T*>(stackTop_);
 		}
 
@@ -86,8 +86,11 @@ namespace Acros
 		{
 			size_t newCapacity = 0;
 			if (stack_ == nullptr){
-				if(allocator_ == nullptr)
-					ownAllocator_ = allocator_ = new Allocator();
+				if (allocator_ == nullptr)
+				{
+					allocator_ = new Allocator();
+					ownAllocator_ = allocator_;
+				}
 
 				newCapacity = initialCapacity_;
 			}
@@ -128,7 +131,7 @@ namespace Acros
 
 	private:
 		Allocator* allocator_;
-		Allocator* *ownAllocator_;
+		Allocator* ownAllocator_;
 		char* stack_;
 		char* stackTop_;			//Stack + Size
 		char* stackEnd_;			//Stack + Capacity

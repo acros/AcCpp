@@ -160,6 +160,8 @@
     <ClInclude Include="tricks\sfinae.h" />
     <ClInclude Include="tutorial\ClassLayoutCheck.h" />
     <ClInclude Include="tutorial\leptjson\leptjson.h" />
+    <ClInclude Include="utils\Allocator.h" />
+    <ClInclude Include="utils\GenericMemoryBuffer.h" />
     <ClInclude Include="utils\MixStack.h" />
   </ItemGroup>
   <ItemGroup>
