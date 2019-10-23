@@ -100,13 +100,14 @@ void GenericAlgorithm::Sort(SortType t, vector<int>& nums)
 	case GenericAlgorithm::Bubble:
 		BubbleSort(nums);
 		break;
-	case GenericAlgorithm::Hash:
-		break;
-	case GenericAlgorithm::Fast:
+	case GenericAlgorithm::Quick:
+		QuickSort(nums);
 		break;
 	case GenericAlgorithm::Heap:
+		HeapSort(nums);
 		break;
 	case GenericAlgorithm::Merge:
+		MergeSort(nums);
 		break;
 	default:
 		assert(false);
@@ -188,6 +189,72 @@ void GenericAlgorithm::BubbleSort(vector<int>& nums)
 	}
 
 	cout << "Bubble Sort END" << endl;
+}
+
+// Time: O( n*log(n) )  ; Worst: O(n²) ;
+void GenericAlgorithm::QuickSort(vector<int>& nums)
+{
+	cout << "Fast Sort BEGIN" << endl;
+
+	if (nums.empty())
+		return;
+
+	InnerQuickSort(nums, 0, nums.size() - 1);
+
+	cout << "Fast Sort END" << endl;
+
+}
+
+void GenericAlgorithm::InnerQuickSort(vector<int>& nums, int left, int right)
+{
+	if (left > right)
+		return;
+
+	int lowBound = left;
+	int highBound = right;
+
+	int key = nums[left];
+	while (left < right)
+	{
+		if (nums[right] >= key && left < right)
+			--right;
+
+		if(left < right)
+			nums[left] = nums[right];
+
+		if (nums[left] <= key && left < right)
+			++left;
+
+		if (left < right)
+			nums[right] = nums[left];
+	}
+
+	nums[left] = key;
+
+	if (stepDebug)
+	{
+		debugSortStep(nums, left, -1);
+	}
+
+	InnerQuickSort(nums, lowBound, left - 1);
+	InnerQuickSort(nums, left + 1, highBound);
+}
+
+
+void GenericAlgorithm::HeapSort(vector<int>& nums)
+{
+	//TODO:
+}
+
+void GenericAlgorithm::MergeSort(vector<int>& nums)
+{
+	//TODO:
+
+}
+
+void GenericAlgorithm::InnerMergeSortConverge(vector<int>& nums, int left, int mid, int right)
+{
+
 }
 
 void GenericAlgorithm::debugSortStep(const vector<int>& nums, int idx1, int idx2)

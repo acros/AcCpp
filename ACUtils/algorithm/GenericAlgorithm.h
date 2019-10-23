@@ -19,8 +19,8 @@ public:
 		Bubble,
 
 		//Fast
-		Hash,
-		Fast,
+//		Shell,
+		Quick,
 		Heap,
 
 		//Space usage
@@ -40,6 +40,17 @@ public:
 
 	void BubbleSort(vector<int>& nums);
 
+	void QuickSort(vector<int>& nums);
+
+	void HeapSort(vector<int>& nums);
+
+	void MergeSort(vector<int>& nums);
+
+protected:
+
+	void InnerQuickSort(vector<int>& nums, int left, int right);
+
+	void InnerMergeSortConverge(vector<int>& nums,int left,int mid,int right);
 
 protected:
 	bool stepDebug;
