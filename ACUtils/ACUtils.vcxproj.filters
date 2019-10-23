@@ -25,6 +25,9 @@
     <Filter Include="源文件\utils">
       <UniqueIdentifier>{3a01180f-22a7-4462-a371-b7e9509b73c3}</UniqueIdentifier>
     </Filter>
+    <Filter Include="源文件\algorithm">
+      <UniqueIdentifier>{8cb3ef9c-c65a-4865-8c69-d3477b4700ea}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="pch.h">
@@ -57,6 +60,9 @@
     <ClInclude Include="utils\GenericMemoryBuffer.h">
       <Filter>源文件\utils</Filter>
     </ClInclude>
+    <ClInclude Include="algorithm\GenericAlgorithm.h">
+      <Filter>源文件\algorithm</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="pch.cpp">
@@ -85,6 +91,9 @@
     </ClCompile>
     <ClCompile Include="tutorial\ClassLayoutCheck.cpp">
       <Filter>源文件\tutorial</Filter>
+    </ClCompile>
+    <ClCompile Include="algorithm\GenericAlgorithm.cpp">
+      <Filter>源文件\algorithm</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>
