@@ -1,5 +1,6 @@
 #include "CppStandard11.h"
 #include <iostream>
+#include <vector>
 
 using namespace std;
 
@@ -99,7 +100,6 @@ void CppStandard0x11::exampleMove()
 	//Example
 	DynamicArray<int> arr = arrayFactor(10);
 
-
 	int lValue = 200;
 	int& refValue = lValue;
 	int&& rValue = 100;
@@ -121,6 +121,58 @@ void CppStandard0x11::exampleMove()
 	cout << "-- Test Perfect Forward" << endl;
 
 }
+
+
+void CppStandard0x11::DoMoveAndForwardTest()
+{
+//	TestForMove dummyClass = DoInnerMoveAndForwardTest("CommonClass");
+
+//	TestForMove& dummyMoveClass = DoInnerMoveAndForwardTest("Ref-Class");
+
+
+	TestForMove dummyClass = DoInnerCopyTest("Common-Class");
+
+//	TestForMove&& dummyMoveClass = DoInnerMoveTest("RightRef-MovedClass");
+	TestForMove&& dummyRRefClass = TestForMove("Right-Ref-Class");
+
+	TestForRRefParam(std::forward<TestForMove>(dummyRRefClass));
+	TestForCommonParam(std::forward<TestForMove>(dummyRRefClass));
+
+// 	cout << "*VECTOR*" << endl;
+// 	std::vector<TestForMove> ds(3);
+// 	ds.emplace_back("InStock");
+
+}
+
+CppStandard0x11::TestForMove CppStandard0x11::DoInnerCopyTest(const string& className)
+{
+	TestForMove dummy(className);
+	return dummy;
+}
+
+CppStandard0x11::TestForMove&& CppStandard0x11::DoInnerMoveTest(const string& className)
+{
+	TestForMove dummy(className);
+	return std::move(dummy);
+
+}
+
+void CppStandard0x11::TestForCommonParam(TestForMove t)
+{
+	cout << "Test for common param" << endl;
+
+}
+
+void CppStandard0x11::TestForRRefParam(const TestForMove&& t)
+{
+	cout << "Test for R-Ref param" << endl;
+}
+
+
+// template<typename T> void CppStandard0x11::DoInnerTemplate(T t)
+// {
+// 	cout << "Current version is r-ref : "  + std::is_rvalue_reference<T>().value<< endl;
+// }
 
 
 template <typename T>
